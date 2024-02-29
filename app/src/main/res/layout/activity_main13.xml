@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    tools:context=".MainActivity13">
+
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#AD5A5A"
+                android:text="Travelling salesman problem (TSP)" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="旅行商問題是在給定特定目的地列表的情況下尋找最短的路線，它是計算機科學和運籌學領域著名的算法問題，顯然有很多不同的路線可供選擇，但找到最好的路線需要最少距離或成本的路線是數學家和計算機科學家幾十年來一直試圖解決的問題。\nTSP它很容易描述，但很難解決，事實上，TSP 屬於一類被稱為 NP-complete的組合優化問題，這意味著 TSP 被歸類為NP-hard，因為它沒有快速解決方案，並且當您向問題添加更多目的地時，計算最佳路線的複雜性會增加。 " />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:srcCompat="@drawable/sale" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="可以通過分析每條往返路線以確定最短的路線來解決該問題，然而，隨著目的地數量的增加，相應的往返次數甚至超過了最快的計算機的能力，對於 10 個目的地，可以有超過 300,000 個往返排列和組合，有 15 個目的地，可能的路線數量可能超過 870 億條。\n" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#AD5A5A"
+                android:text="蠻力方法" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="也稱為樸素方法，計算和比較路線或路徑的所有可能排列，以確定最短的唯一解決方案，要使用 Brute-Force 方法求解 TSP，您必須計算路線總數，然後繪製並列出所有可能的路線。計算每條路線的距離，然後選擇最短的路線這是最優解。\n" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#AD5A5A"
+                android:text="最近鄰法" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="這可能是最簡單的 TSP 啟發式方法，這種方法的關鍵是總是訪問最近的目的地，然後在訪問所有其他城市時返回第一個城市，要使用此方法求解 TSP，請選擇一個隨機城市，然後尋找最近的未訪問城市並前往該城市，訪問完所有城市後，您必須返回第一個城市。\n\n影片教學" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/link_salesman"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck"  />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

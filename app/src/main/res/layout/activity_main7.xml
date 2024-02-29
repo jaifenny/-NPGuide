@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    tools:context=".MainActivity7">
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="通過每一頂點且只通過一次的路徑稱為漢米爾頓路徑(Hamilton Path);若是要求必須再回到起始頂點的迴路，則稱為漢米爾頓迴路(Hamilton Cycle)。\n\n在一個具有n個頂點的圖G=(V,E)中，任一漢米爾頓路徑必恰好經過n-1個邊;而任一漢米爾頓迴路必恰好經過n個邊。\n若一圖有漢米爾頓迴路存在，則只要去掉該迴路上的任一個邊，及可得到此圖的漢米爾頓路徑。" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                app:srcCompat="@drawable/crcuit" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                app:srcCompat="@drawable/hp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="\nHamilton Circuit應用\nTravelling Salesman Problem\n一個周遊各國的商人，他想去所有不同的城市買賣東西。商人打算從其中一個城市出發，各個地方剛好經過一次、只能經過一次，回到原城市。請規劃出距離最短的路線，以及算出距離。這個問題其實就是找到權重最小的 Hamilton Circuit 。\n" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                app:srcCompat="@drawable/circuitex1" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="\n影片教學" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/link_hamiltonian"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

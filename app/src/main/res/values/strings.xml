@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NPGuide</string>
+    <string name="link1">https://reurl.cc/emN4vb/</string>
+    <string name="link2">https://en.wikipedia.org/wiki/Combinatorial_explosion</string>
+
+
+    <string name="link_np_hard">https://www.youtube.com/watch?v=e2cF8a5aAhE</string>
+    <string name="link_subset_sum">https://www.youtube.com/watch?v=kyLxTdsT8ws</string>
+    <string name="link_clique">https://youtu.be/qZs767KQcvE</string>
+    <string name="link_hamiltonian">https://www.youtube.com/watch?v=dQr4wZCiJJ4</string>
+    <string name="link_salesman">https://www.youtube.com/watch?v=1FEP_sNb62k</string>
+    <string name="link_vertex">https://www.youtube.com/watch?v=D2l_kYxhjs0</string>
+    <string name="link_three_dm">https://youtu.be/cd1sxq7wnhE</string>
+
+
+</resources>

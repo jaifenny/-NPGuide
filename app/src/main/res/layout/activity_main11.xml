@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    tools:context=".MainActivity11">
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="照一開始的窮舉法總共會有4^8種可能，雖然點到手指很酸，但電腦能夠在幾毫秒的時間內處理完成，就算整個個格子都挖空，也只有4^16種可能，在「固定大小」的宮格內複雜度不會因數據變化而變化，而驗證時間複雜度也只要O(n^3)，所以整體複雜度還是在多項式時間。\n\n但是當現在宮格變成nxn的大小，且n必須要等接收到之後才知道有多大，若n的數字變大時，會因為指數暴漲" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/link2"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="而造成無法在多項式時間內找到解，但如果我們接收到的是已經填好的數獨宮格，我們是有辦法在多項式時間內進行驗證的，所以它屬於NP問題的一種~ 而數獨問題也被數學家證明是NP-complete問題的一種。\n\n至於NP-complete問題是NP中最難的決定性問題，所以如果能夠證明NPC的問題有P的解，那所有NP問題就都可以找到P的解。\n" />
+
+            <Button
+                android:id="@+id/button"
+                android:onClick="next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="284dp"
+                android:background="@drawable/bt"
+                android:text="下個例子" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

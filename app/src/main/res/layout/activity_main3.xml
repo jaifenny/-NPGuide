@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    tools:context=".MainActivity3">
+
+    <ScrollView
+        android:layout_width="401dp"
+        android:layout_height="562dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paradox"
+                android:textColor="#AD5A5A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="若學生說:「我猜您會當掉我」假設學生答對\n=>學生答對，不會被當掉(a)\n=>(a)與分析句子不符 =>學生會被當掉\n假設學生答錯\n=>學生答錯，會被當掉(b)\n =>(b)與分析句子相符 =>學生不會被當掉\n\n這種矛盾的情況也可以衍生到著名的停機問題，停機問題即判斷任意一個程式是否能在有限的時間之內結束執行的問題，該問題等價於如下的判定問題：是否存在一個程式H，對於任意輸入的程式w，能夠判斷w會在有限時間內結束或者無窮迴圈，它被證明是一種NP Hard的問題，它的證明想法如下。"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:srcCompat="@drawable/halting" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "假設停機問題有解，即：存在過程H(P, I)可以判斷對於程式P在輸入I的情況下是否可停機。\n顯然，程式本身也是一種資料，因此它可以作為輸入，故H應該可以判定當將P作為P的輸入時，P是否會停機。然後我們定義一個過程U(P)，其流程如下：\nU(P)呼叫H(P, P)：\n如果H(P, P)輸出「無窮迴圈」，U(P)就停機。\n如果H(P, P)輸出「停機」，U(P)就進入無窮迴圈。也就是說，U()做的事情就是做出與H()的輸出相反的動作。\n而U(U)呼叫H(U, U)的情況就像是前面故事裡的教授，如果H(U, U)函數輸出「無窮迴圈」，U(U)就停機，但這樣就會導致H的定義相矛盾，因為照H自己本來的定義，H(U, U)的結果應該和U(U)相同；若H(U, U)函數輸出「停機」，U(U)就進入無窮迴圈，這樣兩者一樣相互矛盾。"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="284dp"
+                android:background="@drawable/bt"
+                android:onClick="go_to_conclusion"
+                android:text="總結" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

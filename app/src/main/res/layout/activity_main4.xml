@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    tools:context=".MainActivity4">
+
+    <ScrollView
+        android:layout_width="405dp"
+        android:layout_height="570dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="什麼是SAT ?\n用來判斷一組給定的布林函數，是否可以找到一組變數賦值能使其為真。\n(a ∨ b ∨ c) : 假設a, b, c 任一為 true 該式都為 true --> satisfiable !\n(a ∧ ¬a) : 不論a為 true 或 false 該式都為 false --> unsatisfiable !\n\nSAT的重要性\n1. SAT是第一個 NP-Complete problem\n在應用的角度只要知道NP-Complete problem很難，沒辦法有效率找到最佳解(但可能可以有效率的找到近似最佳解)，以及 NP-Complete problem 可以在多項式時間內互相轉換(就是說你可以拿一個 NP-Complete problem 來解另外一個)，這樣就夠了。\n2. 解SAT的方法發展的很好\nSAT 做為最古老且知名的 NP-Complete problem，已經有許多演算法跟技巧被發明出來解它，目前最好的那些 SAT solver 可以解到上萬個變數，我們知道 NP-Complete problem 可以在多項式時間內互轉，而 SAT solver 的效率又不錯，那麼 SAT 自然是很有實用性的。\n\nSAT的應用\nCircuit satisfiability problem:\n給出一個電路，是否有 input 能讓 output 為 true\n"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/satuse" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="(¬a ∨ ¬b ∨ c)∧(a ∨ ¬c)∧(b ∨ ¬c): A or B 任一者為false, C = false,該式都為true--> satisfiable !\n(¬a ∨ ¬b ∨ c)∧(a ∨ ¬c)∧(b ∨ ¬c): A and B 都為true, C = true,該式都為true--> satisfiable !\n如果運用這種方法，就可以堆積出複雜電路的 boolean function，可以測試一個電路能不能 output true，也就是說能知道它會不會是無用的電路(可以化簡)，這種方法叫做 Tseitin transformation。\n\n影片教學:" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/link_np_hard"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

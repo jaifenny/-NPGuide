@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F0FFF0"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity15">
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#AD5A5A"
+                android:text="論 P, NP, NP-hard, NP-complete 問題\n" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:srcCompat="@drawable/np1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="\nP : 指的是有Polynomial Time的解的問題。\n\nNP : 指的是還沒有找到 Polynomial Time 的解,也不確定有沒有Polynomial Time 的解,但是只要你提供一個解,這個解可以在PlyomialTime被驗證。\n\nNP Complete : 指的也是還沒有找到Polynomial Time的解,但是可以在Polynomial Time 被驗證的問题。但是NPC的問题是NP裡面比較難的問題,所以如果能夠證明NPC的問題有的P解,那NP的問題就都可以找到P的解。\n\nNP Hard : 指的也是還沒有找到 Polynomial Time的解,但是不確定是不是能在 Polynomial Time 被驗證的問題，且NP Hard的問題又比NPC難。\n\n" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt"
+                android:layout_marginStart="284dp"
+                android:onClick="go_to_lib"
+                android:text="例子" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

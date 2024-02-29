@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFF0"
+    tools:context=".MainActivity2">
+
+    <TableRow
+        android:layout_width="279dp"
+        android:layout_height="75dp"
+
+        android:layout_marginTop="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+
+            android:background="@drawable/bt_border"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="40sp"
+            android:background="@drawable/bt_border"
+            android:width="1dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bt_fix"
+            android:text="2"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="40sp"
+            android:background="@drawable/bt_border"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="279dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="40sp"
+            android:background="@drawable/bt_border"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:background="@drawable/bt_fix"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="40sp"
+            android:background="@drawable/bt_border"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="@drawable/bt_border"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="279dp"
+        android:layout_height="75dp"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:background="@drawable/bt_fix"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text="3"
+            android:textSize="40sp"
+            android:background="@drawable/bt_fix"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="@drawable/bt_border"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="40sp"
+            android:background="@drawable/bt_border"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="279dp"
+        android:layout_height="75dp"
+
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="40sp"
+            android:background="@drawable/bt_border"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="@drawable/bt_border"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="@drawable/bt_border"
+            android:textSize="40sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:text="4"
+
+            android:textSize="40sp"
+            android:background="@drawable/bt_fix"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt"
+        android:onClick="btn_tab"
+        android:text="點我"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <Button
+        android:id="@+id/tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt"
+        android:onClick="btn_tab2"
+        android:text="回溯法"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="32dp"
+        android:text="數獨"
+        android:textSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="268dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="120dp"
+        android:text="假設我們現在是笨笨的電腦，\n要如何一步步猜出答案呢?"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
